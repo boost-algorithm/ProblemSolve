@@ -16,6 +16,12 @@
 * 매주 한명당 1문제씩 문제 선정 후 업로드
 * 주마다 코드 및 설명을 업로드
 * 자신이 사용하고 싶은 언어로 풀이
+* Github 활용
+  * Repository를 Fork해온다.
+  * 문제를 풀고 **문제 단위**로 commit을 한다.
+  * ```src/개인 폴더/```에 업로드한다.
+  * 각자 브랜치로 PR을 보낸다.
+  * 코드 리뷰가 끝나고 master Branch로 Merge한다.
 
 ## :green_book: Week Study
 
@@ -33,7 +39,7 @@
 
 ## :raising_hand: Contributors
 
-|                                                 | [**kyu9341**](https://github.com/kyu9341) |
+| [grap3fruit](https://github.com/grap3fruit)     | [**kyu9341**](https://github.com/kyu9341) |
 | ----------------------------------------------- | ----------------------------------------- |
 | [**do02reen24**](https://github.com/do02reen24) | [**Do-ho**](https://github.com/Do-ho)     |
 
