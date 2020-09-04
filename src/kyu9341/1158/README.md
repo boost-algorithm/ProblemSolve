@@ -1,16 +1,6 @@
----
-layout: post
-title: "백준 1107번 리모컨"
-subtitle: "Baekjoon algorithm"
-date: 2020-02-26 09:51:12
-author: kwon
-categories: algorithm
-tags:
-	- Algorithm
----
-# Problem 1107
+# Problem 1158
 
-## 리모컨
+## 요세푸스 문제
 
 ### 문제
 요세푸스 문제는 다음과 같다.
