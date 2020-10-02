@@ -31,12 +31,14 @@
 | 2주차 |      [절댓값 힙](https://www.acmicpc.net/problem/11286)      | [위장](https://programmers.co.kr/learn/courses/30/lessons/42578) |   [트리 순회](https://www.acmicpc.net/problem/1991)    | [이진 탐색 트리 - 연장](https://www.acmicpc.net/problem/2957) |
 | 3주차 | [자동완성](https://programmers.co.kr/learn/courses/30/lessons/17685) | [문자열 압축](https://programmers.co.kr/learn/courses/30/lessons/60057) | [그룹 단어 체커](https://www.acmicpc.net/problem/1316) |                                                              |
 | 4주차 |     [스타트 택시](https://www.acmicpc.net/problem/19238)     | [자동완성 - 연장](https://programmers.co.kr/learn/courses/30/lessons/17685) |                                                        |                                                              |
+| 5주차 |       [숨바꼭질](https://www.acmicpc.net/problem/1697)       |       [바이러스](https://www.acmicpc.net/problem/2606)       |     [토마토](https://www.acmicpc.net/problem/7569)     |                                                              |
 
 ## :blue_book: Additional Study
 
-| 분류     |                                              |                                                   |                                                   |
-| -------- | -------------------------------------------- | ------------------------------------------------- | ------------------------------------------------- |
-| 자료구조 | [괄호](https://www.acmicpc.net/problem/9012) | [쇠막대기](https://www.acmicpc.net/problem/10799) | [스택 수열](https://www.acmicpc.net/problem/1874) |
+| 분류     |                                                   |                                                   |                                                   |
+| -------- | ------------------------------------------------- | ------------------------------------------------- | ------------------------------------------------- |
+| 자료구조 | [괄호](https://www.acmicpc.net/problem/9012)      | [쇠막대기](https://www.acmicpc.net/problem/10799) | [스택 수열](https://www.acmicpc.net/problem/1874) |
+| BFS/DFS  | [DFS와 BFS](https://www.acmicpc.net/problem/1260) |                                                   |                                                   |
 
 
 
