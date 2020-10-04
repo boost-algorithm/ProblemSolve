@@ -1,0 +1,2 @@
+words = ["go","gone","guild"]
+
