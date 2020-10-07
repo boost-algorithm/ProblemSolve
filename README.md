@@ -1,6 +1,6 @@
 # :books: Algorithm Study
 
-## :orange_book: ​알고리즘 사이트
+## :orange_book: 알고리즘 사이트
 
 > 스터디는 다음 알고리즘 사이트에 있는 문제로 진행한다.
 
@@ -25,15 +25,20 @@
 
 ## :green_book: Week Study
 
-|       |                           1                           |                       2                        |                           3                           |                           4                            |
-| ----- | :---------------------------------------------------: | :--------------------------------------------: | :---------------------------------------------------: | :----------------------------------------------------: |
-| 1주차 | [요세푸스 문제](https://www.acmicpc.net/problem/1158) | [에디터](https://www.acmicpc.net/problem/1406) | [풍선 터뜨리기](https://www.acmicpc.net/problem/2346) | [이진 탐색 트리](https://www.acmicpc.net/problem/2957) |
+|       |                              1                               |                              2                               |                           3                            |                              4                               |
+| ----- | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------: | :----------------------------------------------------------: |
+| 1주차 |    [요세푸스 문제](https://www.acmicpc.net/problem/1158)     |        [에디터](https://www.acmicpc.net/problem/1406)        | [풍선 터뜨리기](https://www.acmicpc.net/problem/2346)  |    [이진 탐색 트리](https://www.acmicpc.net/problem/2957)    |
+| 2주차 |      [절댓값 힙](https://www.acmicpc.net/problem/11286)      | [위장](https://programmers.co.kr/learn/courses/30/lessons/42578) |   [트리 순회](https://www.acmicpc.net/problem/1991)    | [이진 탐색 트리 - 연장](https://www.acmicpc.net/problem/2957) |
+| 3주차 | [자동완성](https://programmers.co.kr/learn/courses/30/lessons/17685) | [문자열 압축](https://programmers.co.kr/learn/courses/30/lessons/60057) | [그룹 단어 체커](https://www.acmicpc.net/problem/1316) |                                                              |
+| 4주차 |     [스타트 택시](https://www.acmicpc.net/problem/19238)     | [자동완성 - 연장](https://programmers.co.kr/learn/courses/30/lessons/17685) |                                                        |                                                              |
+| 5주차 |       [숨바꼭질](https://www.acmicpc.net/problem/1697)       |       [바이러스](https://www.acmicpc.net/problem/2606)       |     [토마토](https://www.acmicpc.net/problem/7569)     |                                                              |
 
 ## :blue_book: Additional Study
 
-|      |      |      |      |
-| ---- | ---- | ---- | ---- |
-|      |      |      |      |
+| 분류     |                                                   |                                                   |                                                   |
+| -------- | ------------------------------------------------- | ------------------------------------------------- | ------------------------------------------------- |
+| 자료구조 | [괄호](https://www.acmicpc.net/problem/9012)      | [쇠막대기](https://www.acmicpc.net/problem/10799) | [스택 수열](https://www.acmicpc.net/problem/1874) |
+| BFS/DFS  | [DFS와 BFS](https://www.acmicpc.net/problem/1260) |                                                   |                                                   |
 
 
 
@@ -42,4 +47,3 @@
 | [grap3fruit](https://github.com/grap3fruit)     | [**kyu9341**](https://github.com/kyu9341) |
 | ----------------------------------------------- | ----------------------------------------- |
 | [**do02reen24**](https://github.com/do02reen24) | [**Do-ho**](https://github.com/Do-ho)     |
-
