@@ -17,23 +17,14 @@ def checkBoard(startRow, endRow, startCol, endCol):
 
 def compress(n, startRow, startCol):
     n = int(n / 2)
-    ans = []
-    if checkBoard(startRow, startRow + n, startCol, startCol + n):
-        ans.append(board[startRow][startCol])
-    else:
-        ans.append(compress(n, startRow, startCol))
-    if checkBoard(startRow, startRow + n, startCol + n, startCol + n + n):
-        ans.append(board[startRow][startCol + n])
-    else:
-        ans.append(compress(n, startRow, startCol + n))
-    if checkBoard(startRow + n, startRow + n + n, startCol, startCol + n):
-        ans.append(board[startRow + n][startCol])
-    else:
-        ans.append(compress(n, startRow + n, startCol))
-    if checkBoard(startRow + n, startRow + n + n, startCol + n, startCol + n + n):
-        ans.append(board[startRow + n][startCol + n])
-    else:
-        ans.append(compress(n, startRow + n, startCol + n))
+    if not checkBoard(startRow, startRow + n, startCol, startCol + n):
+        compress(n, startRow, startCol)
+    if not checkBoard(startRow, startRow + n, startCol + n, startCol + n + n):
+        compress(n, startRow, startCol + n)
+    if not checkBoard(startRow + n, startRow + n + n, startCol, startCol + n):
+        compress(n, startRow + n, startCol)
+    if not checkBoard(startRow + n, startRow + n + n, startCol + n, startCol + n + n):
+        compress(n, startRow + n, startCol + n)
 
 def findSolution(N):
     if checkBoard(0, N, 0, N): return
