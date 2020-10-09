@@ -1,25 +1,23 @@
-# :fire: week6
-
-## :ballot_box_with_check: 백준 1992
-
-#### 출력 초과
-
-```python
 import sys
 
 board = []
+blue = 0
+white = 0
 
 def checkBoard(startRow, endRow, startCol, endCol):
     check = board[startRow][startCol]
     for r in range(startRow, endRow):
         for c in range(startCol, endCol):
-            if not check == board[r][c]: return False
+            if not check == board[r][c] : return False
+    global blue
+    global white
+    if check == 1: blue = blue + 1
+    elif check == 0: white = white + 1
     return True
 
 def compress(n, startRow, startCol):
     n = int(n / 2)
     ans = []
-    print(n, startRow, startCol)
     if checkBoard(startRow, startRow + n, startCol, startCol + n):
         ans.append(board[startRow][startCol])
     else:
@@ -36,26 +34,16 @@ def compress(n, startRow, startCol):
         ans.append(board[startRow + n][startCol + n])
     else:
         ans.append(compress(n, startRow + n, startCol + n))
-    return '(' + ''.join(ans) + ')'
 
 def findSolution(N):
-    if checkBoard(0, N, 0, N):
-        return board[0][0]
-    ans = compress(N, 0, 0)
-    return ans
+    if checkBoard(0, N, 0, N): return
+    compress(N, 0, 0)
 
 if __name__ == '__main__':
-    N = int(sys.stdin.readline())
-    for i in range(N):
-        inputs = list(sys.stdin.readline().rstrip())
+    N = int(sys.stdin.readline().rstrip())
+    for _ in range(N):
+        inputs = list(map(int, sys.stdin.readline().split(' ')))
         board.append(inputs)
-    print(findSolution(N))
-```
-
-확인용으로 찍어놓은 print문을 지우지 않아서 발생한 문제였다. 앞으로는 더 꼼꼼하게 확인하도록 해야겠다.
-
-## :ballot_box_with_check: 백준 2630
-
-1992 문제와 유사하여 빠르게 풀 수 있었다.
-
-## :ballot_box_with_check: 백준 1780
+    findSolution(N)
+    print(white)
+    print(blue)
