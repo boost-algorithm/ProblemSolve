@@ -33,6 +33,7 @@
 | 4주차 |     [스타트 택시](https://www.acmicpc.net/problem/19238)     | [자동완성 - 연장](https://programmers.co.kr/learn/courses/30/lessons/17685) |                                                        |                                                              |
 | 5주차 |       [숨바꼭질](https://www.acmicpc.net/problem/1697)       |       [바이러스](https://www.acmicpc.net/problem/2606)       |     [토마토](https://www.acmicpc.net/problem/7569)     |                                                              |
 | 6주차 |       [쿼드트리](https://www.acmicpc.net/problem/1992)       |    [색종이 만들기](https://www.acmicpc.net/problem/2630)     |  [종이의 개수](https://www.acmicpc.net/problem/1780)   |                                                              |
+| 7주차 | [달이 차오른다, 가자.](https://www.acmicpc.net/problem/1194) | [러버덕을 사랑하는 모임](https://www.acmicpc.net/problem/18233) |     [막대기](https://www.acmicpc.net/problem/1094)     |    [스타트와 링크](https://www.acmicpc.net/problem/14889)    |
 
 ## :blue_book: Additional Study
 
