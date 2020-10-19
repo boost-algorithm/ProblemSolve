@@ -35,6 +35,7 @@
 | 6주차 |       [쿼드트리](https://www.acmicpc.net/problem/1992)       |    [색종이 만들기](https://www.acmicpc.net/problem/2630)     |  [종이의 개수](https://www.acmicpc.net/problem/1780)   |                                                              |
 | 7주차 | [달이 차오른다, 가자.](https://www.acmicpc.net/problem/1194) | [러버덕을 사랑하는 모임](https://www.acmicpc.net/problem/18233) |     [막대기](https://www.acmicpc.net/problem/1094)     |    [스타트와 링크](https://www.acmicpc.net/problem/14889)    |
 | 8주차 |   [통나무 건너뛰기](https://www.acmicpc.net/problem/11497)   |      [신입 사원](https://www.acmicpc.net/problem/1946)       |    [동전 0](https://www.acmicpc.net/problem/11047)     |                                                              |
+| 9주차 |    [1, 2, 3 더하기](https://www.acmicpc.net/problem/9095)    |     [평볌한 배낭](https://www.acmicpc.net/problem/12865)     | [2×n 타일링 2](https://www.acmicpc.net/problem/11727)  |                                                              |
 
 ## :blue_book: Additional Study
 
