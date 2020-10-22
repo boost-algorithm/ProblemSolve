@@ -11,4 +11,6 @@
 
 ## :ballot_box_with_check: 백준 11497
 
+-   연습하면서 썼던 print문을 안지워서 출력초과가 떴는데 print 출력을 더 유심히 보고 지울 필요가 있을 것 같다.
+
 ## :ballot_box_with_check: 백준 2504
