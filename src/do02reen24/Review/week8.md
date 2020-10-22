@@ -7,6 +7,8 @@
 
 ## :ballot_box_with_check: 백준 11047
 
+-   python의 경우 pop을 하면 뒤부터 반환해주기 때문에 array를 통해 쉽게 풀 수 있었다.
+
 ## :ballot_box_with_check: 백준 11497
 
 ## :ballot_box_with_check: 백준 2504
