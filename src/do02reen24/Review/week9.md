@@ -34,4 +34,11 @@ int main() {
 
 ## :ballot_box_with_check: 백준 11727
 
+- 이전에 공부했던 내용을 찾아봐서 풀었다.
+- 컴퓨터의 나머지 연산: 컴퓨터의 정수는 저장할 수 있는 범위가 지정되어 있기 때문에 답을 M으로 나눈 나머지를 출력하라는 문제가 등장한다.
+  - (A+B) mod M = ((A mod M) + (B mod M)) mod M
+  - (AXB) mod M = ((A mod M) X (B mod M)) mod M
+  - (A-B) mod M = ((A mod M) - (B mod M)) mod M
+  - 나누기는 성립하지 않는다.
+
 ## :ballot_box_with_check: 백준 12865
