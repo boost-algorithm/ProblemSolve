@@ -38,6 +38,7 @@
 | 9주차  |        [1, 2, 3 더하기](https://www.acmicpc.net/problem/9095)        |            [평범한 배낭](https://www.acmicpc.net/problem/12865)             |  [2×n 타일링 2](https://www.acmicpc.net/problem/11727)  |
 | 10주차 |          [다리 놓기](https://www.acmicpc.net/problem/1010)           |             [계단 오르기](https://www.acmicpc.net/problem/2579)             |    [RGB 거리](https://www.acmicpc.net/problem/1149)     |  [평범한 배낭 - 연장](https://www.acmicpc.net/problem/12865)  |
 | 11주차 |         [열차 시간표](https://www.acmicpc.net/problem/12731)         |             [정수 삼각형](https://www.acmicpc.net/problem/1932)             | [팰린드롬 만들기](https://www.acmicpc.net/problem/1254) |                                                               |
+| 12주차 |         [ATM](https://www.acmicpc.net/problem/11399)         |             [회문](https://www.acmicpc.net/problem/17609)             |  |                                                               |
 
 ## :blue_book: Additional Study
 
