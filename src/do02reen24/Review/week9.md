@@ -1,4 +1,4 @@
-# :fire: week8
+# :fire: week9
 
 주제 : Dynamic programming
 
@@ -42,3 +42,35 @@ int main() {
   - 나누기는 성립하지 않는다.
 
 ## :ballot_box_with_check: 백준 12865
+
+#### 시간초과
+
+```python
+import sys
+
+def pickObject(index, sumW, sumV, isPick):
+    global backpack, ans
+    if index >= n: return
+    if sumW > k: return
+    if sumW <= k and sumV > ans: ans = sumV
+    w = 0
+    v = 0
+    if isPick:
+        w, v = backpack[index]
+    pickObject(index + 1, sumW + w, sumV + v, True)
+    pickObject(index + 1, sumW + w, sumV + v, False)
+
+n, k = map(int, sys.stdin.readline().split(' '))
+ans = 0
+backpack = []
+for _ in range(n):
+    w, v = map(int, sys.stdin.readline().split(' '))
+    backpack.append((w, v))
+
+pickObject(0, 0, 0, True)
+pickObject(0, 0, 0, False)
+
+print(ans)
+```
+
+- 재귀로 풀지 않고 논리적인 생각을 통해 앞의 결과 중 더 큰 것을 골라야함을 알았다.
