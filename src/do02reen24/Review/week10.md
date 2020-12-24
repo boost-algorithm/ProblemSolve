@@ -9,3 +9,5 @@
 ## :ballot_box_with_check: 백준 2579
 
 ## :ballot_box_with_check: 백준 1149
+
+- 문제가 dynamic-programming인 것을 고려하여 각 r, g, b에 대해 최소값을 누적하여 관리하는 리스트를 생성하여 해결하였다.
