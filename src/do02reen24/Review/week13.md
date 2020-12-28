@@ -27,6 +27,8 @@ def decodeNum():
 print(int(decodeNum()))
 ```
 
+- 숫자가 0인 경우를 예외처리해주고 1000000으로 나누는 부분을 수정함
+
 ## :ballot_box_with_check: 백준 2178
 
 - 초기에 `visited = [[-1] * m] * n` 와 같이 초기화를 했더니 2차원 배열이 같은 값들을 참조하여 동시에 값이 변경되는 문제가 있었다. `visited = [[-1 for _ in range(m)] for _ in range(n)]`와 같이 초기화하여 해결할 수 있었다.
