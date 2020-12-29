@@ -39,7 +39,7 @@
 | 10주차 |      [다리 놓기](https://www.acmicpc.net/problem/1010)       |     [계단 오르기](https://www.acmicpc.net/problem/2579)      |    [RGB 거리](https://www.acmicpc.net/problem/1149)     | [평범한 배낭 - 연장](https://www.acmicpc.net/problem/12865)  |
 | 11주차 |     [열차 시간표](https://www.acmicpc.net/problem/12731)     |     [정수 삼각형](https://www.acmicpc.net/problem/1932)      | [팰린드롬 만들기](https://www.acmicpc.net/problem/1254) |                                                              |
 | 12주차 |         [ATM](https://www.acmicpc.net/problem/11399)         |        [회문](https://www.acmicpc.net/problem/17609)         |                                                         |                                                              |
-| 13주차 |       [미로탐색](https://www.acmicpc.net/problem/2178)       |       [암호코드](https://www.acmicpc.net/problem/2011)       | [퀄린드롬(easy)](https://www.acmicpc.net/problem/20422) |       [촌수계산](https://www.acmicpc.net/problem/2644)       |
+| 13주차 |       [미로탐색](https://www.acmicpc.net/problem/2178)       |       [암호코드](https://www.acmicpc.net/problem/2011)       | [떡먹는호랑이](https://www.acmicpc.net/problem/2502) |       [촌수계산](https://www.acmicpc.net/problem/2644)       |
 
 ## :blue_book: Additional Study
 
