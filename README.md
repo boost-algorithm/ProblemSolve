@@ -40,6 +40,7 @@
 | 11주차 |     [열차 시간표](https://www.acmicpc.net/problem/12731)     |     [정수 삼각형](https://www.acmicpc.net/problem/1932)      | [팰린드롬 만들기](https://www.acmicpc.net/problem/1254) |                                                              |
 | 12주차 |         [ATM](https://www.acmicpc.net/problem/11399)         |        [회문](https://www.acmicpc.net/problem/17609)         |                                                         |                                                              |
 | 13주차 |       [미로탐색](https://www.acmicpc.net/problem/2178)       |       [암호코드](https://www.acmicpc.net/problem/2011)       | [떡먹는호랑이](https://www.acmicpc.net/problem/2502) |       [촌수계산](https://www.acmicpc.net/problem/2644)       |
+| 14주차 | [크레인 인형뽑기](https://programmers.co.kr/learn/courses/30/lessons/64061) | [가장 긴 팰린드롬](https://programmers.co.kr/learn/courses/30/lessons/12904) | [튜플](https://programmers.co.kr/learn/courses/30/lessons/64065) |              |
 
 ## :blue_book: Additional Study
 
