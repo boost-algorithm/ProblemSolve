@@ -51,7 +51,7 @@ def solution(words):
             else:
                 searchDict[w] = 1
 
-    for word in words: // 1
+    for word in words:
         length = len(word)
         minAnswer = searchDict[word]
         ans = length
@@ -69,6 +69,59 @@ def solution(words):
 ```
 
 1번 제출때와 다르게 뒤에서부터 검사하면 시간을 줄일 수 있지 않을까 했는데 똑같은 경우에서 시간초과가 발생했다. 로직 자체를 다른 방향으로 접근해야하는 것 같다.
+
+#### 시간초과(18/22)
+
+마땅한 해결책이 떠오르지 않아 인터넷 검색을 통해 해결하였다. `트라이` 자료구조의 활용을 의도한 문제라고 한다.
+
+[Trie 자료구조 의미와 활용](https://blog.ilkyu.kr/entry/%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%97%90%EC%84%9C-Trie-%ED%8A%B8%EB%9D%BC%EC%9D%B4-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0) 을 통해 Trie에 대해 자세히 알 수 있었다.
+
+**방법 1. Trie**
+
+* 트리 자료 구조의 일종으로 어떤 문자열을 검색할 때의 시간 복잡도는 **O(n)** 이다. (n은 문자열의 최대 길이)
+
+* 문자열 검색에 특화된 자료구조이다.
+
+Trie를 사용해 더 이상 단어의 분기점이 없는 지점을 찾는 과정을 통해 문제를 해결 할 수 있다.
+
+**방법 2. 전체 단어의 사전 순 정렬**
+
+전체 단어를 사전순으로 정렬하면 인접한 두 단어 쌍만 비교하여 문제를 빠르게 해결할 수 있다.
+
+**내 코드는 왜 시간초과일까?**
+
+Trie를 구현하는 방법은 여러가지가 있어 여러 풀이를 찾아봤는데 내가 구현한 것과 큰 차이를 모르겠었다. 어떤 부분에서 시간초과가 발생한 것일까?
+
+[dictionary 시간복잡도](https://wayhome25.github.io/python/2017/06/14/time-complexity/) 를 찾아봤지만 `index`, `get` 모두 `O(1)` 이었다.
+
+**`list`의 `slice` 때문인가?** Trie와 내가 구현한 것의 차이를 생각해보니 Trie는 list의 다음 요소를 검사할 뿐이지만, 내가 구현한 코드는 앞의 문자열을 만들기 때문에 `O(n)` 의 시간복잡도로 검사할 다음 문자열을 생성하게 된다. 즉 `w = word[:i+1]` 부분이 문제인줄 알고 해당 부분을 고쳐서 돌려보았으나 똑같이 **시간초과가 발생**했다.
+
+```python
+def solution(words):
+    answer = 0
+    searchDict = {}
+    for word in words:
+        index = ''
+        for w in word:
+            index += w
+            if searchDict.get(index):
+                searchDict[index] += 1
+            else:
+                searchDict[index] = 1
+
+    for word in words:
+        index = ''
+        length = len(word)
+        for i in range(length):
+            if i+1 == length:
+                answer += length
+                break
+            index += word[i]
+            if searchDict[index] == 1:
+                answer += i+1
+                break
+    return answer
+```
 
 # :fire: 추가문제
 
