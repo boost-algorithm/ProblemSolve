@@ -41,9 +41,6 @@ def solution(N, A, B, M, dic):
 
     if (A in result_A) and (B in result_B):
       intersec = result_A & result_B
-      # if len(result_A - intersec) == 1 and len(result_B - intersec) == 1:
-      #   return 1
-        
       return abs(len(result_A - intersec) + len(result_B - intersec))
     
   return -1
