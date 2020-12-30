@@ -14,7 +14,7 @@ for _ in range(m):
     try: r[y].append(x)
     except: r[y] = [x]
 
-def bfs():
+def dfs():
     q = deque()
     q.append((a, 0))
     visited = [False for _ in range(n+1)]
@@ -29,4 +29,4 @@ def bfs():
             visited[item] = True
     return -1
 
-print(bfs())
+print(dfs())
