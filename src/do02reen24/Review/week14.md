@@ -9,6 +9,41 @@
 
 ## :ballot_box_with_check: 프로그래머스 크레인 인형뽑기 게임(64061)
 
+#### 정확성 81.8
+
+- 테스트 1번, 2번 실패
+
+```js
+const getTopDollIndex = (board, index) => {
+  let topIndex = -1;
+  for (const line of board) {
+    topIndex = topIndex + 1;
+    if (line[index] !== 0) break;
+  }
+  return topIndex;
+};
+
+const solution = (board, moves) => {
+  let answer = 0;
+  const basket = [];
+  for (const move of moves) {
+    const dollX = move - 1;
+    const dollY = getTopDollIndex(board, dollX);
+    const doll = board[dollY][dollX];
+    board[dollY][dollX] = 0;
+
+    const top = basket.pop();
+    if (top === doll) {
+      answer = answer + 2;
+    } else {
+      basket.push(top);
+      basket.push(doll);
+    }
+  }
+  return answer;
+};
+```
+
 ## :ballot_box_with_check: 프로그래머스 가장 긴 팰린드롬(12904)
 
 #### 정확성: 62.7, 효율성: 30.7
