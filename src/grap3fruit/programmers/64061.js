@@ -7,31 +7,38 @@ const board = [
 ];
 const moves = [1, 5, 3, 5, 1, 2, 1, 4];
 
-const result = [];
-let answer = 0;
+function solution(board, moves) {
+  const result = [];
+  let answer = 0;
 
-moves.forEach((move) => {
-  for (let i = 0; i < board.length; i++) {
-    if (board[i][move - 1] !== 0) {
-      if (result.length > 0) {
-        const prev = result.pop();
+  moves.reduce((acc, move) => {
+    for (let i = 0; i < board.length; i++) {
+      if (board[i][move - 1] === 0) {
+        continue;
+      }
+
+      if (acc.length > 0) {
+        const prev = acc.pop();
 
         if (prev === board[i][move - 1]) {
           board[i][move - 1] = 0;
           answer += 2;
-          break;
+          return acc;
         }
 
-        result.push(prev);
+        acc.push(prev);
       }
 
-      result.push(board[i][move - 1]);
+      acc.push(board[i][move - 1]);
       board[i][move - 1] = 0;
-      break;
+      return acc;
     }
-  }
-});
+    return acc;
+  }, []);
 
-console.log(board);
-console.log(result);
-console.log(answer);
+  console.log(board);
+  console.log(result);
+  return answer;
+}
+
+console.log(solution(board, moves));
