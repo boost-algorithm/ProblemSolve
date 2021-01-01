@@ -1,6 +1,4 @@
-const getSubtractedArr = (arrA, arrB) => {
-  return arrB.filter((el) => !arrA.includes(el));
-};
+const getSubtractedArr = (arrA, arrB) => arrB.filter((el) => !arrA.includes(el));
 
 const getArrFromStr = (s) => {
   const arr = s.split('');
