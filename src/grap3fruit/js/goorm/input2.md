@@ -1,3 +1,28 @@
+test case
+
+```
+5
+12345
+23456
+34567
+45678
+56789
+```
+
+결과
+
+```
+5
+[
+  [1,2,3,4,5],
+  [2,3,4,5,6],
+  [3,4,5,6,7],
+  [4,5,6,7,8],
+  [5,6,7,8,9]
+]
+```
+
+```javascript
 const print = (N, data) => {
   console.log(N);
   console.log(data);
@@ -15,8 +40,10 @@ const readline = require('readline');
     if (!N) {
       N = +line;
     } else {
-      data.push(line.split('').map((el) => +el));
-      // data.push(line);
+      // data.push(line); // 1 2 3 4 5 -> ['1 2 3 4 5']
+      // data.push(line.split(' ').map((el) => +el)); // 1 2 3 4 5 -> [1,2,3,4,5]
+      // data.push(line.split('').map((el) => el));   // 12345 -> ['1','2','3','4','5']
+      data.push(line.split('').map((el) => +el)); // 12345 -> [1,2,3,4,5]
       count += 1;
     }
     if (N === count) {
@@ -31,3 +58,4 @@ const readline = require('readline');
   print(N, data);
   process.exit();
 })();
+```
