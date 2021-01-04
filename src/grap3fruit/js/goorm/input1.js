@@ -1,6 +1,5 @@
-const print = (N, info, data) => {
+const solution = (N, data) => {
   console.log(N);
-  console.log(info);
   console.log(data);
 };
 
@@ -11,7 +10,6 @@ const rl = readline.createInterface({
 });
 
 let N = null;
-let info = null;
 let count = 0;
 const data = [];
 
@@ -19,19 +17,17 @@ rl.on('line', function (line) {
   console.log(line);
   if (!N) {
     N = +line;
-  } else if (N && !info) {
-    info = line.split(' ').map((el) => +el);
   } else {
-    data.push(line.split(' ').map((el) => +el));
+    // data.push(line.split(' ').map((el) => +el));
     // data.push(line.split('').map((el) => +el));
     // data.push(line.split('').map((el) => el));
-    // data.push(line);
-    count += 1;
+    data.push(line);
   }
+  count += 1;
   if (count === N) {
     rl.close();
   }
 }).on('close', function () {
-  print(N, info, data);
+  solution(N, data);
   process.exit();
 });
