@@ -15,10 +15,10 @@ const readline = require('readline');
     if (!N) {
       N = +line;
     } else {
-      // data.push(line); // 1 2 3 4 5 -> ['1 2 3 4 5']
+      data.push(line); // 1 2 3 4 5 -> ['1 2 3 4 5']
       // data.push(line.split(' ').map((el) => +el)); // 1 2 3 4 5 -> [1,2,3,4,5]
       // data.push(line.split('').map((el) => el));   // 12345 -> ['1','2','3','4','5']
-      data.push(line.split('').map((el) => +el)); // 12345 -> [1,2,3,4,5]
+      // data.push(line.split('').map((el) => +el)); // 12345 -> [1,2,3,4,5]
       count += 1;
     }
     if (N === count) {

@@ -1,0 +1,1 @@
+[구름(goorm), 백준(BOJ) 코딩 테스트 JavaScript로 입력받는 방법 정리](https://velog.io/@grap3fruit/%EA%B5%AC%EB%A6%84goorm-%EC%BD%94%ED%85%8C-javascript-%EB%A1%9C-%EC%9E%85%EB%A0%A5%EA%B0%92-%EB%B0%9B%EB%8A%94-%EB%B0%A9%EB%B2%95?fbclid=IwAR2HHZP8nb6pgOnBkFvDFmHJ3NCjj7bQBIogNjWRwBQ2sgDVu3l6LEZ94_4) 블로그 글 작성

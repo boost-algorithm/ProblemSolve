@@ -1,4 +1,4 @@
-const print = (N, data) => {
+const solution = (N, data) => {
   console.log(N);
   console.log(data);
 };
@@ -28,6 +28,6 @@ rl.on('line', function (line) {
     rl.close();
   }
 }).on('close', function () {
-  print(N, data);
+  solution(N, data);
   process.exit();
 });
