@@ -21,12 +21,7 @@ function solution(n, computers) {
   const visited = [];
 
   computers.forEach((_, idx) => {
-    let visitFlag = false;
-    visited.forEach((el) => {
-      if (el.includes(idx)) {
-        visitFlag = true;
-      }
-    });
+    const visitFlag = visited.some((el) => el.includes(idx));
 
     if (!visitFlag) {
       const newVisited = bfs(computers, idx);

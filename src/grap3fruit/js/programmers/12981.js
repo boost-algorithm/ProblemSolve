@@ -1,10 +1,14 @@
-const check = (words, n, word, idx, visited) => {
-  if (visited.includes(word)) {
-    return [(idx % n) + 1, Math.ceil((idx + 1) / n)];
+const getResult = (idx, n) => {
+  return [(idx % n) + 1, Math.ceil((idx + 1) / n)];
+};
+
+const check = (lastWord, n, word, idx, visited) => {
+  if (visited.get(word)) {
+    return getResult(idx, n);
   }
   if (idx > 0) {
-    if (words[idx - 1][words[idx - 1].length - 1] !== word[0]) {
-      return [(idx % n) + 1, Math.ceil((idx + 1) / n)];
+    if (lastWord[lastWord.length - 1] !== word[0]) {
+      return getResult(idx, n);
     }
   }
   return null;
@@ -12,12 +16,12 @@ const check = (words, n, word, idx, visited) => {
 
 function solution(n, words) {
   let answer = null;
-  const visited = [];
+  const visited = new Map();
 
   words.forEach((word, idx) => {
     if (!answer) {
-      answer = check(words, n, word, idx, visited);
-      visited.push(word);
+      answer = check(words[idx - 1], n, word, idx, visited);
+      visited.set(word, true);
     }
   });
   if (!answer) {
@@ -31,4 +35,4 @@ const words = ['hello', 'two'];
 // const words = ['hello', 'one', 'even', 'never', 'now', 'world', 'draw'];
 // const words = ['tank', 'kick', 'know', 'wheel', 'land', 'dream', 'mother', 'robot', 'tank'];
 
-solution(n, words);
+console.log(solution(n, words));
